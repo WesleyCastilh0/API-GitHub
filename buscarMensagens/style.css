@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.dados_estilo{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #c0c0c0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000000;
+    background-color: rgb(106, 183, 235);
+}
+
+form{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #c0c0c0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000000;
+    background-color: rgb(106, 183, 235);
+}
+
+form img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.input {
+    max-width: 200%;
+    width: 200%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 0;
+}
+
+.input_dt {
+    box-shadow: #f80000;
+    max-width: 100%;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 0;
+}
+
+.input_submit{
+    margin-right: 50px;
+}
+
+.label {
+    color: #363636;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.separacao {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.coluna {
+    display: block;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.colunas {
+    margin: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.coluna_pequena {
+    flex: none;
+    width: 20%;
+}
