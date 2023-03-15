@@ -3,6 +3,10 @@ body {
     background-color: #ffffff;
 }
 
+h3{
+    font-size: 15px;
+}
+
 .dados_estilo{
     position: relative;
     width: 700px;
