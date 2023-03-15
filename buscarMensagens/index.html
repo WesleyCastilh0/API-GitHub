@@ -5,35 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Verificação de commits</title>
 </head>
 
 <body>
     <form>
-        <label>Repositório</label>
-        <input type="text" id="repositorio"></input><br /><br />
-        <label>Data inicial</label>
-        <input type="date" id="dataInicial"></input><br /><br />
-        <label>Data final</label>
-        <input type="date" id="dataFinal"></input><br /><br />
-        <input type="submit" value="Pesquisar" />
+        <img src="./imagens/MediaKit_logo04.png" alt="Logo Unimake Software">
+        <div class="separacao">
+            <div class="colunas">
+                <div class="coluna_pequena">
+                    <label class="label">Repositório</label>
+                    <input class="input" type="text" id="repositorio"></input><br /><br />
+                </div>
+            </div>
+        </div>
+        <div class="separacao">
+            <div class="colunas">
+                <div class="coluna">
+                    <label class="label">Data inicial</label>
+                    <input class="input_dt" type="date" id="dataInicial"></input><br /><br />
+                </div>
+                <div class="coluna">
+                    <label class="label">Data final</label>
+                    <input class="input_dt" type="date" id="dataFinal"></input><br /><br />
+                </div>
+                <div class="coluna"></div>
+                <div class="coluna"></div>
+                <div class="coluna"></div>
+            </div>
+        </div>
+        <div class="separacao">
+            <input class="input_submit" type="submit" value="Pesquisar" />
+        </div>
     </form>
 
-    <div id="dados"></div>
+    <div class="dados_estilo" id="dados"></div>
 
 </body>
 
 <script>
     const form = document.querySelector("form");
-        form.addEventListener('submit', function(event ){
-            event.preventDefault(); // Remove o refresh da página após o submit
-            const repositorio = document.querySelector("#repositorio").value;
-            const dataInicial = document.querySelector("#dataInicial").value;
-            const dataFinal = document.querySelector("#dataFinal").value;
-            //console.log(repositorio + " " + dataInicial + " " + dataFinal);
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Remove o refresh da página após o submit
+        const repositorio = document.querySelector("#repositorio").value;
+        const dataInicial = document.querySelector("#dataInicial").value;
+        const dataFinal = document.querySelector("#dataFinal").value;
+        //console.log(repositorio + " " + dataInicial + " " + dataFinal);
 
-            buscarCommits(repositorio, dataInicial, dataFinal);
-        });
+        buscarCommits(repositorio, dataInicial, dataFinal);
+    });
 </script>
 
 <script type="text/javascript" src="index.js"></script>
